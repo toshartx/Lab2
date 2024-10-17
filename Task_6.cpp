@@ -1,12 +1,12 @@
 #include <iostream>
 #include <cmath>
-// 6.8
+// 6.9
 int main()
 {
-    double A, B, C, d, K, x;
-    std::cin >> C >> d >> K >> x;
-    B = x + exp(d);
-    A = log10(x);
-    std::cout << A + B - pow(C,2) / K;
+    double A, B, C, D, K, x, p, z;
+    std::cin >> C >> D >> K >> x >> p >> z;
+    B = std::abs(p - x);
+    A = sin(x) - z;
+    std::cout << pow(A+B,2) - K / (C*D);
     return 0;
 }
