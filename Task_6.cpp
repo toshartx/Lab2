@@ -1,12 +1,12 @@
 #include <iostream>
 #include <cmath>
-// 6.5
+// 6.6
 int main()
 {
-    double A, K, x, D, n, m;
-    std::cin >> x >> K >> n >> m;
-    D = tan(x);
-    A = std::abs(n - m);
-    std::cout << 1.29 + K/A + pow(D,2);
+    double A, C, D, K, x, y;
+    std::cin >> C >> K >> x >> y;
+    A = x + y;
+    D = std::abs(C - A);
+    std::cout << 10.1 + A/C + D/pow(K,2);
     return 0;
 }
