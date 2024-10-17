@@ -21,7 +21,7 @@ double sqrt(double value) {
     return estimate;
 }
 
-// ax4+bx2+c=0
+//  ax4+bx2+c=0
 
 void Solve(double a, double b, double c)
 {
