@@ -12,7 +12,7 @@ double pow(double value, int n)
     return result;
 }
 
-long long Factorial(int value)
+double Factorial(int value)
 {
     if (value == 0 || value == 1)
     {
@@ -44,23 +44,6 @@ double sqrt(double value) {
     return estimate;
 }
 
-double cbrt(double value) {
-    if (value == 0) {
-        return 0;
-    }
-
-    double U = value;
-    double accuracy = 1e-7;
-    double diff = 1;
-    
-    while (std::abs(diff) > accuracy) {
-        double estimate = (2 * U + value / (U * U)) / 3;
-        diff = U - estimate;
-        U = estimate;
-    }
-
-    return U;
-}
 
 double cos(double value)
 {
