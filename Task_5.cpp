@@ -1,11 +1,18 @@
 #include <iostream>
-// ?:
+
+// if else
+
 int main()
 {
     double x,y;
     std::cout << "Vvod: ";
     std::cin >> x >> y;
-    bool S = x >= y;
-    S == 1 ? std::cout << x : std::cout << y;
+    if (x >= y)
+    {
+        std::cout << x;
+    }
+    else {
+        std::cout << y;
+    }
     return 0;
 }
